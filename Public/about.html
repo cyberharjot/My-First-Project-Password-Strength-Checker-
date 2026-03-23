@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Password Strength Checker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        h2{
+            color: #00ffaa;
+        }
+        #gp{
+            color: #00ffaa;
+        }
+        .menu {
+            height: 20px;
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-evenly;
+            text-decoration: none;
+            align-items: center;
+            background-color: rgb(15, 15, 15);
+        }
+        .tb {
+            color: azure;
+            text-decoration: none;
+        }
+        .tb:hover p {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            margin-top: 60px;
+            color: #ccc;
+            font-size: 14px;
+        }
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <a href="passStrength.html">Home</a>
+        <a href="howitworks.html">How it Works</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <h2>Other Features </h2>
+        <a href="passStrength.html">Password Strength Checker</a>
+        <a href="passgen.html">Password Generator</a>
+        <a href="bruteforcesignup.html">BruteForce Simulation</a>
+        <a href="index.html">Welcome!</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+    </div>
+
+    <div class="toolbar">
+        <a href="javascript:void(0)" onclick="openSidebar()"><img src="menu.jpg" alt="options" class="menu"></a>
+        <a href="passStrength.html" class="tb"><p>Home</p></a>
+        <a href="passgen.html" class="tb"><p>Generate Password</p></a>
+        <a href="howitworks.html" class="tb"><p>How it Works</p></a>
+        <a href="contact.html" class="tb"><p>Contact</p></a>
+        <a href="about.html" class="tb" id="gp"><p>About</p></a>
+    </div>
+
+    <div class="container">
+        <h1>About This Project</h1>
+
+        <p>
+            This Password Strength Checker was developed as part of a 45-day Cyber Security Training program at <strong>Future Finders</strong>, assigned by <strong>Sant Baba Bhag Singh University, Jalandhar</strong>.
+        </p>
+        <p>
+            In today’s digital world, weak passwords are among the easiest ways for hackers to gain unauthorized access. The main aim of this tool is to demonstrate how quickly a weak password can be cracked using brute force, raising awareness about digital security.
+        </p>
+        <p>
+            The tool checks password complexity in real-time and encourages users to create strong passwords using a mix of characters, numbers, and symbols.
+        </p>
+        <p>
+            Technologies used in this project include:
+        </p>
+        <ul>
+            <li>HTML & CSS for layout and styling</li>
+            <li>JavaScript for password strength logic</li>
+            <li>Node.js with JSON for user data</li>
+        </ul>
+        <p>
+            Special thanks to our trainer Mr. Shrijan Shukla at Future Finders and the faculty of SBBSU for their guidance and support during this project.
+        </p>
+    </div>
+
+    <div class="footer">
+        Project by Harjot Singh | Cyber Security Training - Future Finders | SBBSU
+    </div>
+    <script>
+            function openSidebar() {
+        document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+    }
+    </script>
+</body>
+</html>

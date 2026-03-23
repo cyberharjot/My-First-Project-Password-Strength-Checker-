@@ -1,0 +1,203 @@
+body{
+    background-color: #1e1e1e;
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+  color: #00ffaa;
+}
+
+.nametext{
+    color: #00ffaa;
+    margin-left: -75px;
+}
+.passtext{
+    color: #00ffaa;
+    margin-left: -30px;
+}
+.menu{
+    height: 20px;
+}
+.topic{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+.toolbar{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+}
+.tb{
+    color: azure;
+    text-decoration: none;
+}
+.tb:hover p {
+    text-decoration: underline;
+}
+.main{
+    margin-top: 50px;
+    font-size: 25px;
+}
+.button{
+    background-color: #00ffaa;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+}
+.button:hover {
+    background-color: #00cc88;
+    cursor: pointer;
+}
+
+.password{
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+}
+.name{
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+}
+    .loading-container {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .dots span {
+      animation: blink 1.5s infinite;
+    }
+
+    .dots span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .dots span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .result-text {
+  font-size: 28px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.result-text {
+  font-size: 28px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.details {
+  font-size: 16px;
+  max-width: 400px;
+  text-align: left;
+  margin-top: 10px;
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ccc;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.details ul {
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.reason-box {
+    background-color: #1e1e1e;
+    color: #fff;
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.details.issues {
+    background-color: #2b1f00;
+    color: orange;
+}
+
+.details.suggestions {
+    background-color: #002b00;
+    color: lightgreen;
+}
+.strength-bar {
+    width: 300px;
+    height: 15px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    margin-top: 30px;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    transition: width 0.5s ease;
+    border-radius: 10px;
+}
+.sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            color: #ccc;
+        }

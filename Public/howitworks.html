@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How It Works - Password Strength Checker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        .menu{
+        height: 20px;
+        }
+        #gp{
+            color: #00ffaa;
+        }
+        .toolbar{
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        align-items: center;
+        background-color: rgb(15, 15, 15);
+        }
+        .tb{
+            color: azure;
+            text-decoration: none;
+        }
+
+        .tb:hover p {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #00ffaa;
+            margin-top: 30px;
+        }
+        .otherfeatures{
+            font-size: 24px;
+            color: #00ffaa;
+        }
+
+        ul {
+            margin-left: 20px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            margin-top: 60px;
+            color: #ccc;
+            font-size: 14px;
+        }
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <a href="passStrength.html">Home</a>
+        <a href="howitworks.html">How it Works</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <h2 class="otherfeatures">Other Features </h2>
+        <a href="passStrength.html">Password Strength Checker</a>
+        <a href="passgen.html">Password Generator</a>
+        <a href="bruteforcesignup.html">BruteForce Simulation</a>
+        <a href="index.html">Welcome!</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+    </div>
+
+    <div class="toolbar">
+        <a href="javascript:void(0)" onclick="openSidebar()"><img src="menu.jpg" alt="options" class="menu"></a>
+        <a href="passStrength.html" class="tb"><p>Home</p></a>
+        <a href="passgen.html" class="tb" ><p>Generate Password</p></a>
+        <a href="howitworks.html" class="tb" id="gp"><p>How it Works</p></a>
+        <a href="contact.html" class="tb"><p>Contact</p></a>
+        <a href="about.html" class="tb"><p>About</p></a>
+    </div>
+
+
+    <div class="container">
+        <h1>How It Works</h1>
+
+        <p>
+            The Password Strength Checker is a tool designed to help users understand how strong or weak their password is. It provides real-time feedback based on password complexity and length, encouraging better password creation habits.
+        </p>
+
+        <h2>🔍 Strength Evaluation Criteria</h2>
+        <p>The tool checks for:</p>
+        <ul>
+            <li>Length of the password (longer = stronger)</li>
+            <li>Use of lowercase letters (a-z)</li>
+            <li>Use of uppercase letters (A-Z)</li>
+            <li>Inclusion of numbers (0-9)</li>
+            <li>Use of special characters (e.g., !@#$%^&*)</li>
+            <li>Avoiding repeated characters or common patterns</li>
+        </ul>
+
+        <h2>🛡️ Security Awareness</h2>
+        <p>
+            This tool also includes a <strong>brute force simulation</strong> feature. It shows how quickly a weak password can be cracked by trying all possible combinations. This helps users realize how vulnerable short or simple passwords are.
+        </p>
+
+        <h2>⚙️ Behind the Scenes</h2>
+        <p>
+            The project is developed using:
+        </p>
+        <ul>
+            <li><strong>HTML/CSS</strong> for layout and design</li>
+            <li><strong>JavaScript</strong> for real-time checking and visual feedback</li>
+            <li><strong>Node.js + JSON</strong> for storing user credentials or password tests</li>
+        </ul>
+
+        <h2>💡 Purpose</h2>
+        <p>
+            The goal is to raise awareness about password safety and help users build better habits that protect their online identity.
+        </p>
+
+        <p>
+            Even simple tools like this can play an important role in Cyber Security education by showing how attackers think and why users need to stay ahead.
+        </p>
+    </div>
+
+    <div class="footer">
+        Project by Harjot Singh | Cyber Security Training - Future Finders | SBBSU
+    </div>
+    <script>
+    function openSidebar() {
+        document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeSidebar() {
+        document.getElementById("sidebar").style.width = "0";
+    }
+    </script>
+
+</body>
+</html>
